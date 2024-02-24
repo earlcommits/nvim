@@ -1,4 +1,7 @@
 vim.opt.clipboard:append("unnamedplus")
+vim.opt.ignorecase = true
+vim.opt.relativenumber = true
+vim.api.nvim_set_keymap('i', '<C-q>', '<C-o>de', {noremap = true})
 vim.g.mapleader = " "
 
 local function save_on_insert_leave()
