@@ -1,7 +1,7 @@
 return {
-	"MunifTanjim/prettier.nvim",
 	"jose-elias-alvarez/null-ls.nvim",
 	"neovim/nvim-lspconfig",
+	{ "MunifTanjim/prettier.nvim",
 	config = function()
         require("prettier").setup({
             -- Configuration options
@@ -20,5 +20,5 @@ return {
                 -- Add other filetypes as needed
             },
         })
-    end,
+    end},
 }
